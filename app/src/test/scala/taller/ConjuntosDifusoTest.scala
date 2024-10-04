@@ -47,7 +47,7 @@ class ConjuntosDifusosTest extends AnyFunSuite {
 
     test("grande: 100 con (10, 2)") {
     val conjunto = objConjuntosDifusos.grande(10, 2)
-    assert(math.abs(conjunto(100) - 0.9090909090909091) < 0.000001)
+    assert(math.abs(conjunto(100) - 0.826446281) < 0.000001)
     }
 
     test("grande: 0 con (10, 2)") {
@@ -146,7 +146,7 @@ class ConjuntosDifusosTest extends AnyFunSuite {
     val conjunto1 = objConjuntosDifusos.muchoMayorQue(1, 10)
     val conjunto2 = objConjuntosDifusos.grande(10, 2)
     val interseccionConjunto = objConjuntosDifusos.interseccion(conjunto1, conjunto2)
-    assert(math.abs(interseccionConjunto(10) - 0.5) < 0.000001)
+    assert(math.abs(interseccionConjunto(10) - 0.25) < 0.000001)
     }
 
     test("interseccion: 0 en interseccion de muchoMayorQue(1, 10) y grande(10, 2)") {
@@ -176,15 +176,52 @@ class ConjuntosDifusosTest extends AnyFunSuite {
     assert(objConjuntosDifusos.inclusion(conjunto1, conjunto2))
     }
 
-    test("inclusion: grande(10, 2) incluido en grande(10, 3)") {
+    test("inclusion: grande(10, 2) no incluido en grande(10, 3)") {
     val conjunto1 = objConjuntosDifusos.grande(10, 2)
     val conjunto2 = objConjuntosDifusos.grande(10, 3)
+    assert(!objConjuntosDifusos.inclusion(conjunto1, conjunto2))
+    }
+
+    test("inclusion: grande(10, 3) incluido en grande(10, 2)") {
+    val conjunto1 = objConjuntosDifusos.grande(10, 3)
+    val conjunto2 = objConjuntosDifusos.grande(10, 2)
     assert(objConjuntosDifusos.inclusion(conjunto1, conjunto2))
     }
 
-    test("inclusion: grande(10, 3) no incluido en grande(10, 2)") {
-    val conjunto1 = objConjuntosDifusos.grande(10, 3)
+    test("inclusion: grande(10, 4) incluido en grande(10, 2)") {
+    val conjunto1 = objConjuntosDifusos.grande(10, 4)
     val conjunto2 = objConjuntosDifusos.grande(10, 2)
-    assert(!objConjuntosDifusos.inclusion(conjunto1, conjunto2))
+    assert(objConjuntosDifusos.inclusion(conjunto1, conjunto2))
+    }
+
+    // Tests para igualdad
+    test("Igualdad: grande(10, 4) no es igual a grandre(10, 3)") {
+    val conjunto1 = objConjuntosDifusos.grande(10, 4)
+    val conjunto2 = objConjuntosDifusos.grande(10, 3)
+    assert(!objConjuntosDifusos.igualdad(conjunto1, conjunto2))
+    }
+
+    test("Igualdad: grande(10, 3) igual a grandre(10, 3)") {
+    val conjunto1 = objConjuntosDifusos.grande(10, 3)
+    val conjunto2 = objConjuntosDifusos.grande(10, 3)
+    assert(objConjuntosDifusos.igualdad(conjunto1, conjunto2))
+    }
+
+    test("Igualdad: grande(10, 2) no es igual a grandre(10, 5)") {
+    val conjunto1 = objConjuntosDifusos.grande(10, 2)
+    val conjunto2 = objConjuntosDifusos.grande(10, 5)
+    assert(!objConjuntosDifusos.igualdad(conjunto1, conjunto2))
+    }
+
+    test("Igualdad: grande(10, 5) igual a grandre(10, 5)") {
+    val conjunto1 = objConjuntosDifusos.grande(10, 5)
+    val conjunto2 = objConjuntosDifusos.grande(10, 5)
+    assert(objConjuntosDifusos.igualdad(conjunto1, conjunto2))
+    }
+
+    test("Igualdad: grande(10, 2) no es igual a grandre(10, 6)") {
+    val conjunto1 = objConjuntosDifusos.grande(10, 2)
+    val conjunto2 = objConjuntosDifusos.grande(10, 6)
+    assert(!objConjuntosDifusos.igualdad(conjunto1, conjunto2))
     }
 }

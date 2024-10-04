@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">29</div>
+<div class="counter">35</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">4</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.054s</div>
+<div class="counter">0.040s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">86%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,292 +61,10 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
+<a href="#tab0">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="grande: 100 con (10, 2)"></a>
-<h3 class="failures">grande: 100 con (10, 2)</h3>
-<span class="code">
-<pre>org.scalatest.exceptions.TestFailedException: 0.08264462809917361 was not less than 1.0E-6
-	at app//org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:472)
-	at app//org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:471)
-	at app//org.scalatest.Assertions$.newAssertionFailedException(Assertions.scala:1231)
-	at app//org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:1295)
-	at app//taller.ConjuntosDifusosTest.$anonfun$new$8(ConjuntosDifusoTest.scala:50)
-	at app//org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
-	at app//org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
-	at app//org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-	at app//org.scalatest.Transformer.apply(Transformer.scala:22)
-	at app//org.scalatest.Transformer.apply(Transformer.scala:20)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike$$anon$1.apply(AnyFunSuiteLike.scala:226)
-	at app//org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
-	at app//org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
-	at app//org.scalatest.funsuite.AnyFunSuite.withFixture(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.invokeWithFixture$1(AnyFunSuiteLike.scala:224)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$runTest$1(AnyFunSuiteLike.scala:236)
-	at app//org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTest(AnyFunSuiteLike.scala:236)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTest$(AnyFunSuiteLike.scala:218)
-	at app//org.scalatest.funsuite.AnyFunSuite.runTest(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$runTests$1(AnyFunSuiteLike.scala:269)
-	at app//org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
-	at app//scala.collection.immutable.List.foreach(List.scala:333)
-	at app//org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at app//org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
-	at app//org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTests(AnyFunSuiteLike.scala:269)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTests$(AnyFunSuiteLike.scala:268)
-	at app//org.scalatest.funsuite.AnyFunSuite.runTests(AnyFunSuite.scala:1564)
-	at app//org.scalatest.Suite.run(Suite.scala:1114)
-	at app//org.scalatest.Suite.run$(Suite.scala:1096)
-	at app//org.scalatest.funsuite.AnyFunSuite.org$scalatest$funsuite$AnyFunSuiteLike$$super$run(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$run$1(AnyFunSuiteLike.scala:273)
-	at app//org.scalatest.SuperEngine.runImpl(Engine.scala:535)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.run(AnyFunSuiteLike.scala:273)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.run$(AnyFunSuiteLike.scala:272)
-	at app//org.scalatest.funsuite.AnyFunSuite.run(AnyFunSuite.scala:1564)
-	at app//org.scalatestplus.junit.JUnitRunner.run(JUnitRunner.scala:99)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
-	at java.base@17.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.11/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.11/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="inclusion: grande(10, 2) incluido en grande(10, 3)"></a>
-<h3 class="failures">inclusion: grande(10, 2) incluido en grande(10, 3)</h3>
-<span class="code">
-<pre>org.scalatest.exceptions.TestFailedException: ConjuntosDifusosTest.this.objConjuntosDifusos.inclusion(conjunto1, conjunto2) was false
-	at app//org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:472)
-	at app//org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:471)
-	at app//org.scalatest.Assertions$.newAssertionFailedException(Assertions.scala:1231)
-	at app//org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:1295)
-	at app//taller.ConjuntosDifusosTest.$anonfun$new$28(ConjuntosDifusoTest.scala:182)
-	at app//org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
-	at app//org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
-	at app//org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-	at app//org.scalatest.Transformer.apply(Transformer.scala:22)
-	at app//org.scalatest.Transformer.apply(Transformer.scala:20)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike$$anon$1.apply(AnyFunSuiteLike.scala:226)
-	at app//org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
-	at app//org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
-	at app//org.scalatest.funsuite.AnyFunSuite.withFixture(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.invokeWithFixture$1(AnyFunSuiteLike.scala:224)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$runTest$1(AnyFunSuiteLike.scala:236)
-	at app//org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTest(AnyFunSuiteLike.scala:236)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTest$(AnyFunSuiteLike.scala:218)
-	at app//org.scalatest.funsuite.AnyFunSuite.runTest(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$runTests$1(AnyFunSuiteLike.scala:269)
-	at app//org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
-	at app//scala.collection.immutable.List.foreach(List.scala:333)
-	at app//org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at app//org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
-	at app//org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTests(AnyFunSuiteLike.scala:269)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTests$(AnyFunSuiteLike.scala:268)
-	at app//org.scalatest.funsuite.AnyFunSuite.runTests(AnyFunSuite.scala:1564)
-	at app//org.scalatest.Suite.run(Suite.scala:1114)
-	at app//org.scalatest.Suite.run$(Suite.scala:1096)
-	at app//org.scalatest.funsuite.AnyFunSuite.org$scalatest$funsuite$AnyFunSuiteLike$$super$run(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$run$1(AnyFunSuiteLike.scala:273)
-	at app//org.scalatest.SuperEngine.runImpl(Engine.scala:535)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.run(AnyFunSuiteLike.scala:273)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.run$(AnyFunSuiteLike.scala:272)
-	at app//org.scalatest.funsuite.AnyFunSuite.run(AnyFunSuite.scala:1564)
-	at app//org.scalatestplus.junit.JUnitRunner.run(JUnitRunner.scala:99)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
-	at java.base@17.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.11/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.11/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="inclusion: grande(10, 3) no incluido en grande(10, 2)"></a>
-<h3 class="failures">inclusion: grande(10, 3) no incluido en grande(10, 2)</h3>
-<span class="code">
-<pre>org.scalatest.exceptions.TestFailedException: ConjuntosDifusosTest.this.objConjuntosDifusos.inclusion(conjunto1, conjunto2) was true
-	at app//org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:472)
-	at app//org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:471)
-	at app//org.scalatest.Assertions$.newAssertionFailedException(Assertions.scala:1231)
-	at app//org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:1295)
-	at app//taller.ConjuntosDifusosTest.$anonfun$new$29(ConjuntosDifusoTest.scala:188)
-	at app//org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
-	at app//org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
-	at app//org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-	at app//org.scalatest.Transformer.apply(Transformer.scala:22)
-	at app//org.scalatest.Transformer.apply(Transformer.scala:20)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike$$anon$1.apply(AnyFunSuiteLike.scala:226)
-	at app//org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
-	at app//org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
-	at app//org.scalatest.funsuite.AnyFunSuite.withFixture(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.invokeWithFixture$1(AnyFunSuiteLike.scala:224)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$runTest$1(AnyFunSuiteLike.scala:236)
-	at app//org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTest(AnyFunSuiteLike.scala:236)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTest$(AnyFunSuiteLike.scala:218)
-	at app//org.scalatest.funsuite.AnyFunSuite.runTest(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$runTests$1(AnyFunSuiteLike.scala:269)
-	at app//org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
-	at app//scala.collection.immutable.List.foreach(List.scala:333)
-	at app//org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at app//org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
-	at app//org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTests(AnyFunSuiteLike.scala:269)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTests$(AnyFunSuiteLike.scala:268)
-	at app//org.scalatest.funsuite.AnyFunSuite.runTests(AnyFunSuite.scala:1564)
-	at app//org.scalatest.Suite.run(Suite.scala:1114)
-	at app//org.scalatest.Suite.run$(Suite.scala:1096)
-	at app//org.scalatest.funsuite.AnyFunSuite.org$scalatest$funsuite$AnyFunSuiteLike$$super$run(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$run$1(AnyFunSuiteLike.scala:273)
-	at app//org.scalatest.SuperEngine.runImpl(Engine.scala:535)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.run(AnyFunSuiteLike.scala:273)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.run$(AnyFunSuiteLike.scala:272)
-	at app//org.scalatest.funsuite.AnyFunSuite.run(AnyFunSuite.scala:1564)
-	at app//org.scalatestplus.junit.JUnitRunner.run(JUnitRunner.scala:99)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
-	at java.base@17.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.11/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.11/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="interseccion: 10 en interseccion de muchoMayorQue(1, 10) y grande(10, 2)"></a>
-<h3 class="failures">interseccion: 10 en interseccion de muchoMayorQue(1, 10) y grande(10, 2)</h3>
-<span class="code">
-<pre>org.scalatest.exceptions.TestFailedException: 0.25 was not less than 1.0E-6
-	at app//org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:472)
-	at app//org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:471)
-	at app//org.scalatest.Assertions$.newAssertionFailedException(Assertions.scala:1231)
-	at app//org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:1295)
-	at app//taller.ConjuntosDifusosTest.$anonfun$new$23(ConjuntosDifusoTest.scala:149)
-	at app//org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
-	at app//org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
-	at app//org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-	at app//org.scalatest.Transformer.apply(Transformer.scala:22)
-	at app//org.scalatest.Transformer.apply(Transformer.scala:20)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike$$anon$1.apply(AnyFunSuiteLike.scala:226)
-	at app//org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
-	at app//org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
-	at app//org.scalatest.funsuite.AnyFunSuite.withFixture(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.invokeWithFixture$1(AnyFunSuiteLike.scala:224)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$runTest$1(AnyFunSuiteLike.scala:236)
-	at app//org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTest(AnyFunSuiteLike.scala:236)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTest$(AnyFunSuiteLike.scala:218)
-	at app//org.scalatest.funsuite.AnyFunSuite.runTest(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$runTests$1(AnyFunSuiteLike.scala:269)
-	at app//org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
-	at app//scala.collection.immutable.List.foreach(List.scala:333)
-	at app//org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at app//org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
-	at app//org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTests(AnyFunSuiteLike.scala:269)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.runTests$(AnyFunSuiteLike.scala:268)
-	at app//org.scalatest.funsuite.AnyFunSuite.runTests(AnyFunSuite.scala:1564)
-	at app//org.scalatest.Suite.run(Suite.scala:1114)
-	at app//org.scalatest.Suite.run$(Suite.scala:1096)
-	at app//org.scalatest.funsuite.AnyFunSuite.org$scalatest$funsuite$AnyFunSuiteLike$$super$run(AnyFunSuite.scala:1564)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.$anonfun$run$1(AnyFunSuiteLike.scala:273)
-	at app//org.scalatest.SuperEngine.runImpl(Engine.scala:535)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.run(AnyFunSuiteLike.scala:273)
-	at app//org.scalatest.funsuite.AnyFunSuiteLike.run$(AnyFunSuiteLike.scala:272)
-	at app//org.scalatest.funsuite.AnyFunSuite.run(AnyFunSuite.scala:1564)
-	at app//org.scalatestplus.junit.JUnitRunner.run(JUnitRunner.scala:99)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
-	at java.base@17.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.11/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.11/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -357,8 +75,33 @@
 </tr>
 </thead>
 <tr>
-<td class="success">complemento: 0 en complemento de muchoMayorQue(1, 10)</td>
+<td class="success">Igualdad: grande(10, 2) no es igual a grandre(10, 5)</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Igualdad: grande(10, 2) no es igual a grandre(10, 6)</td>
 <td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Igualdad: grande(10, 3) igual a grandre(10, 3)</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Igualdad: grande(10, 4) no es igual a grandre(10, 3)</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Igualdad: grande(10, 5) igual a grandre(10, 5)</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">complemento: 0 en complemento de muchoMayorQue(1, 10)</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -373,7 +116,7 @@
 </tr>
 <tr>
 <td class="success">complemento: 15 en complemento de muchoMayorQue(1, 10)</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -383,13 +126,13 @@
 </tr>
 <tr>
 <td class="success">grande: 0 con (10, 2)</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">grande: 100 con (10, 2)</td>
-<td class="failures">0.023s</td>
-<td class="failures">failed</td>
+<td class="success">grande: 100 con (10, 2)</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">grande: 1000 con (10, 2)</td>
@@ -407,14 +150,19 @@
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">inclusion: grande(10, 2) incluido en grande(10, 3)</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
+<td class="success">inclusion: grande(10, 2) no incluido en grande(10, 3)</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">inclusion: grande(10, 3) no incluido en grande(10, 2)</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
+<td class="success">inclusion: grande(10, 3) incluido en grande(10, 2)</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">inclusion: grande(10, 4) incluido en grande(10, 2)</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">inclusion: muchoMayorQue(1, 10) no incluido en muchoMayorQue(1, 20)</td>
@@ -423,7 +171,7 @@
 </tr>
 <tr>
 <td class="success">inclusion: muchoMayorQue(1, 20) incluido en muchoMayorQue(1, 10)</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -433,13 +181,13 @@
 </tr>
 <tr>
 <td class="success">interseccion: 1 en interseccion de muchoMayorQue(1, 10) y grande(10, 2)</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">interseccion: 10 en interseccion de muchoMayorQue(1, 10) y grande(10, 2)</td>
-<td class="failures">0.001s</td>
-<td class="failures">failed</td>
+<td class="success">interseccion: 10 en interseccion de muchoMayorQue(1, 10) y grande(10, 2)</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">interseccion: 100 en interseccion de muchoMayorQue(1, 10) y grande(10, 2)</td>
@@ -453,7 +201,7 @@
 </tr>
 <tr>
 <td class="success">pertenece: elemento 0 en muchoMayorQue(1, 10)</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -468,7 +216,7 @@
 </tr>
 <tr>
 <td class="success">pertenece: elemento 5 en muchoMayorQue(1, 10)</td>
-<td class="success">0.019s</td>
+<td class="success">0.025s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -511,7 +259,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.3</a> at Oct 4, 2024, 5:20:25 PM</p>
+<a href="http://www.gradle.org">Gradle 8.3</a> at 4 oct. 2024 17:36:59</p>
 </div>
 </div>
 </body>
