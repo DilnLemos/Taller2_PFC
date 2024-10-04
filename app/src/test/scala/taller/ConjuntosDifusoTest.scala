@@ -26,7 +26,7 @@ class ConjuntosDifusosTest extends AnyFunSuite {
 
     test("pertenece: elemento 50 en grande(10, 2)") {
     val conjunto = objConjuntosDifusos.grande(10, 2)
-    assert(math.abs(objConjuntosDifusos.pertenece(50, conjunto) - 0.8333333333333334) < 0.000001)
+    assert(math.abs(objConjuntosDifusos.pertenece(50, conjunto) - 0.6944444444444) < 0.000001)
     }
 
     test("pertenece: elemento 5 en grande(10, 2)") {
@@ -37,7 +37,7 @@ class ConjuntosDifusosTest extends AnyFunSuite {
   // Tests para grande
     test("grande: 50 con (10, 2)") {
     val conjunto = objConjuntosDifusos.grande(10, 2)
-    assert(math.abs(conjunto(50) - 0.8333333333333334) < 0.000001)
+    assert(math.abs(conjunto(50) - 0.6944444444444) < 0.000001)
     }
 
     test("grande: 5 con (10, 2)") {
@@ -57,7 +57,7 @@ class ConjuntosDifusosTest extends AnyFunSuite {
 
     test("grande: 1000 con (10, 2)") {
     val conjunto = objConjuntosDifusos.grande(10, 2)
-    assert(math.abs(conjunto(1000) - 0.9900990099009901) < 0.000001)
+    assert(math.abs(conjunto(1000) - 0.98029604940) < 0.000001)
     }
 
   // Tests para complemento
@@ -103,7 +103,7 @@ class ConjuntosDifusosTest extends AnyFunSuite {
     val conjunto1 = objConjuntosDifusos.muchoMayorQue(1, 10)
     val conjunto2 = objConjuntosDifusos.grande(10, 2)
     val unionConjunto = objConjuntosDifusos.union(conjunto1, conjunto2)
-    assert(math.abs(unionConjunto(1) - 0.009090909090909092) < 0.000001)
+    assert(math.abs(unionConjunto(1) - 0.008264462) < 0.000001)
     }
 
     test("union: 10 en union de muchoMayorQue(1, 10) y grande(10, 2)") {
@@ -160,20 +160,20 @@ class ConjuntosDifusosTest extends AnyFunSuite {
     val conjunto1 = objConjuntosDifusos.muchoMayorQue(1, 10)
     val conjunto2 = objConjuntosDifusos.grande(10, 2)
     val interseccionConjunto = objConjuntosDifusos.interseccion(conjunto1, conjunto2)
-    assert(math.abs(interseccionConjunto(100) - 0.9090909090909091) < 0.000001)
+    assert(math.abs(interseccionConjunto(100) - 0.8264462809917) < 0.000001)
     }
 
   // Tests para inclusion
-    test("inclusion: muchoMayorQue(1, 10) incluido en muchoMayorQue(1, 20)") {
+    test("inclusion: muchoMayorQue(1, 10) no incluido en muchoMayorQue(1, 20)") {
     val conjunto1 = objConjuntosDifusos.muchoMayorQue(1, 10)
     val conjunto2 = objConjuntosDifusos.muchoMayorQue(1, 20)
-    assert(objConjuntosDifusos.inclusion(conjunto1, conjunto2))
+    assert(!objConjuntosDifusos.inclusion(conjunto1, conjunto2))
     }
 
-    test("inclusion: muchoMayorQue(1, 20) no incluido en muchoMayorQue(1, 10)") {
+    test("inclusion: muchoMayorQue(1, 20) incluido en muchoMayorQue(1, 10)") {
     val conjunto1 = objConjuntosDifusos.muchoMayorQue(1, 20)
     val conjunto2 = objConjuntosDifusos.muchoMayorQue(1, 10)
-    assert(!objConjuntosDifusos.inclusion(conjunto1, conjunto2))
+    assert(objConjuntosDifusos.inclusion(conjunto1, conjunto2))
     }
 
     test("inclusion: grande(10, 2) incluido en grande(10, 3)") {

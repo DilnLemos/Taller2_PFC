@@ -52,9 +52,9 @@ class ConjuntosDifusos {
     def inclusion(cd1: ConjDifuso, cd2: ConjDifuso) : Boolean = {
         @tailrec
         def testRange(lb: Int, ub: Int, cd1: ConjDifuso, cd2: ConjDifuso): Boolean = {
-        if (!(cd1(lb) <= cd2(lb)))  false
-        else if (lb == ub) true
-        else testRange(lb+1, ub, cd1, cd2)
+            if (!(cd1(lb) <= cd2(lb)))  false
+            else if (lb == ub) true
+            else testRange(lb+1, ub, cd1, cd2)
         }
         testRange(1, 1000, cd1, cd2)
     }
