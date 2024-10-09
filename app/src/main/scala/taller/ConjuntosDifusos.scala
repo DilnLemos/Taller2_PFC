@@ -30,7 +30,6 @@ class ConjuntosDifusos {
     }
 
 
-        // DE AQUI PARA ABAJO FUE PURO TABNINE XD
     def complemento (c: ConjDifuso): ConjDifuso = {
 
         x => 1 - c(x)
