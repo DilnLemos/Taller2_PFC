@@ -1328,3 +1328,5 @@ java.lang.InterruptedException
 2024.10.08 20:20:22 WARN  no build target for: /home/potatto/dev/scala/taller2/Taller2_PFC/app/src/main/scala/taller/ConjuntosDifusos.scala[0m
 2024.10.08 20:20:22 INFO  no build target found for /home/potatto/dev/scala/taller2/Taller2_PFC/app/src/main/scala/taller/ConjuntosDifusos.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
 2024.10.08 20:20:22 INFO  no build target found for /home/potatto/dev/scala/taller2/Taller2_PFC/app/src/main/scala/taller/ConjuntosDifusos.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.10.08 20:23:23 INFO  Shutting down server[0m
+2024.10.08 20:23:23 INFO  shutting down Metals[0m
